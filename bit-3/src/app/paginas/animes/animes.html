@@ -1,0 +1,21 @@
+<h2>Top Animes</h2>
+
+<!-- Muestra mientras carga -->
+<div *ngIf="loading" style="text-align:center;">Cargando animes...</div>
+
+<!-- Muestra si hay error -->
+<div *ngIf="error" style="text-align:center; color: red;">
+  No se pudieron cargar los animes. Intenta más tarde.
+</div>
+
+<!-- Lista de animes -->
+<div class="anime-list" *ngIf="!loading && !error">
+  <div *ngFor="let anime of animes" class="anime-card">
+    <img [src]="anime.images.jpg.image_url" [alt]="anime.title" />
+    <div class="anime-card-content">
+      <h3>{{ anime.title }}</h3>
+      <p>{{ anime.synopsis }}</p>
+    </div>
+  </div>
+</div>
+
