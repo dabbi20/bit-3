@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Navegacion } from './shared/navegacion/navegacion'; // Ajusta esta ruta según dónde tengas el componente Navegacion
+import { Navegacion } from './shared/navegacion/navegacion'; 
 
 @Component({
   selector: 'app-root',
