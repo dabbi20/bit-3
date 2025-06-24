@@ -22,6 +22,10 @@ Este es un proyecto desarrollado con **Angular** que muestra un catálogo de ani
 
 ---
 
+- Autor: David Carrasco
+- Email: davidack123456789@gmail.com
+- likedin: https://www.linkedin.com/in/david-carrasco-desarrollador-fullstack/
+
 
 
 
