@@ -1,28 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Navegacion } from './shared/navegacion/navegacion'; // Ajusta esta ruta según dónde tengas el componente Navegacion
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule],
+  imports: [Navegacion, RouterModule],
   template: `
-    <nav>
-      <a routerLink="" routerLinkActive="active">Inicio</a> |
-      <a routerLink="animes" routerLinkActive="active">Animes</a>
-    </nav>
+    <app-navegacion></app-navegacion>
     <router-outlet></router-outlet>
   `,
-  styles: [`
-    nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: darkblue;
-    }
-    .active {
-      font-weight: bold;
-      text-decoration: underline;
-    }
-  `]
+ 
 })
 export class AppComponent {}
-
