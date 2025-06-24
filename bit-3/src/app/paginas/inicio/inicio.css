@@ -92,9 +92,3 @@
   background-color: #008fcc;
   box-shadow: 0 0 20px #008fcc;
 }
-.welcome-message {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  color: #90caf9; /* azul suave para que resalte pero sin botón */
-  text-align: center;
-}

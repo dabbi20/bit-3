@@ -31,3 +31,4 @@ export class Animes implements OnInit {
     });
   }
 }
+

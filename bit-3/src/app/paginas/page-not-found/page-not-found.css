@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 2rem;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    text-align: left;
+    padding: 4rem 6rem;
+  }
+}
+
+.text {
+  max-width: 500px;
+  animation: slideInLeft 1s ease forwards;
+}
+
+.text h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+  text-shadow: 2px 2px 8px #b33939;
+}
+
+.text p {
+  font-size: 1.2rem;
+  margin: 0.75rem 0;
+}
+
+.text blockquote {
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #ff6f61;
+  color: #ffccbc;
+  background-color: rgba(255, 111, 97, 0.1);
+  box-shadow: 0 0 15px rgba(255, 111, 97, 0.3);
+  max-width: 400px;
+  animation: pulse 3s infinite;
+}
+
+.btn-home {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: #ff6f61;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(255, 111, 97, 0.5);
+}
+
+.btn-home:hover {
+  background-color: #ff3a2e;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 58, 46, 0.7);
+}
+
+.image {
+  max-width: 350px;
+  animation: slideInRight 1s ease forwards;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff6f61;
+  transition: transform 0.4s ease;
+}
+
+.image img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 0 35px #ff3a2e;
+}
+
+/* Animaciones */
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 111, 97, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 111, 97, 0.7);
+  }
+}
